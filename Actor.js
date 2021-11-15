@@ -16,6 +16,10 @@ class Actor {
   getY() {
     return this.#Y;
   }
+
+  addToInbox(message) {
+    this.#inbox.push(message);
+  }
 }
 
 let MyActor = new Actor;
