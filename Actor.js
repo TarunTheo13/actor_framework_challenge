@@ -20,7 +20,16 @@ class Actor {
   addToInbox(message) {
     this.#inbox.push(message);
   }
+
+  processInbox() {
+    let message = this.#inbox.shift();
+    console.log(this.#inbox);
+    if (typeof(message.x)==='integer' && typeof(message.y)==='integer') {
+    	this.#X = message.x;
+      this.#Y = message.y;
+    }
+  }
 }
 
-let MyActor = new Actor;
-console.log(MyActor.getX())
+let myActor = new Actor;
+console.log(myActor.getX())
