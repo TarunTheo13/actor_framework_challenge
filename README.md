@@ -10,4 +10,4 @@ Building a simple actor framework in JavaScript. The actor framework will execut
 - Give it a PUBLIC run function() that executes the messages (thereby updating the PRIVATE state)
 - Instantiate a new actor
 - Create a GLOBAL event loop that repeatedly executes the actor's run function
-- Couple the mouse coordinates to the actors state - X and Y
+- Couple the mouse coordinates to the actor's state - X and Y
