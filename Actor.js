@@ -1,3 +1,4 @@
 class Actor {
-  
+  #X;
+  #Y;
 }
