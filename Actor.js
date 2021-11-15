@@ -9,12 +9,8 @@ class Actor {
     this.#inbox = [];
   }
 
-  getX() {
-    return this.#X;
-  }
-
-  getY() {
-    return this.#Y;
+  getXandY() {
+    return `X: ${this.#X}; Y: ${this.#Y}`;
   }
 
   addToInbox(message) {
@@ -32,4 +28,4 @@ class Actor {
 }
 
 let myActor = new Actor;
-console.log(myActor.getX())
+console.log(myActor.getXandY())
